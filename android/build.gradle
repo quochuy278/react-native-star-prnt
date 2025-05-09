@@ -20,13 +20,21 @@ android {
     lintOptions {
         abortOnError false
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 repositories {
     mavenCentral()
+    google()
 }
 dependencies {
     implementation files('libs/StarIOPort3.1.jar')
     implementation files('libs/starioextension.jar')
     implementation 'com.facebook.react:react-native:+'
     implementation 'com.google.zxing:core:3.2.1'
+    
+    // Add AndroidX annotation dependency to replace android.support.annotation
+    implementation 'androidx.annotation:annotation:1.5.0'
 }
