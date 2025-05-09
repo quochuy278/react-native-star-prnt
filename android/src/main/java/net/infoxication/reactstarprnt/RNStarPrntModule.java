@@ -13,7 +13,7 @@ import android.provider.MediaStore;
 import android.text.TextPaint;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.StaticLayout;
 import android.text.Layout;
 import android.util.Base64;
